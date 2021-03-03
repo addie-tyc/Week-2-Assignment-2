@@ -119,6 +119,10 @@ nav a:hover{
   color: white;
 }
 
+.button a:link {
+  color: rgb(0, 0, 0);
+}
+
 .button:hover .hidden {
   display: inline;
 }
