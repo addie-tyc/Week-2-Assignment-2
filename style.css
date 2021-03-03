@@ -4,6 +4,8 @@ body {
   padding: 0;    
 }
 
+/* navigation bar */
+
 .navbar{
   height: 44px;
   width: 100%;
@@ -34,6 +36,8 @@ nav a {
   float: right;
 }
 
+/* headline */
+
 h1 {
   text-align: center;
   padding: 5rem;
@@ -46,6 +50,8 @@ h2 {
   text-align: center;
   margin: 2rem;
 }
+
+/* content boxes */
 
  .box {
   font-size: 1.5rem;
@@ -66,16 +72,41 @@ h2 {
   margin-left: 15%;
 }
 
-.botton {
+/* Call to Action */
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
   display: block;
+  text-decoration: none;
   text-align: center;
-  margin: 4% 45.5%;
+  margin: 2.5% 45.5%;
   width: 10%;
-  line-height: 3rem;
+  line-height: 2.9rem;
   height: 3rem;
   background-color: rgb(204, 220, 236);
+  transition-duration: 0.1s;
 }
 
+/* more content boxes */
+
+.moreBox {
+  font-size: 1.5rem;
+  display: none;
+  background-color: #8C9CAC;
+  width: 35%;
+  height: 9rem;
+  text-align: center;
+  margin-right: 1rem;
+  padding-top: 1rem
+}
+
+.hidden { display: none; }
+
+.lastRow {
+  margin-bottom: 5%;
+}
 
 /* Pseudo-classes ------------------ */
 nav a:hover{
@@ -83,10 +114,15 @@ nav a:hover{
   color: white;    
 }
 
-a:hover{
+.button:hover {
   background-color: rgb(159, 198, 236);
-  color: white;    
+  color: white;
 }
 
+.button:hover .hidden {
+  display: inline;
+}
 
-
+/* a:visited {
+  color: #000;
+} */
